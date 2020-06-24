@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aussie Rules Scores"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        android:text="Click a button when a team scores."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Team 1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header2" />
+
+    <Button
+        android:id="@+id/goal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#2196F3"
+        android:text="Goal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/team1"
+        app:layout_constraintStart_toEndOf="@+id/team1" />
+
+    <Button
+        android:id="@+id/behind1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#2196F3"
+        android:text="Behind"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/team1"
+        app:layout_constraintStart_toEndOf="@+id/goal1" />
+
+    <TextView
+        android:id="@+id/cur1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Current: 0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/team1"
+        app:layout_constraintStart_toEndOf="@+id/behind1" />
+
+    <TextView
+        android:id="@+id/team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Team 2"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1" />
+
+    <Button
+        android:id="@+id/goal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#2196F3"
+        android:text="Goal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/team2"
+        app:layout_constraintStart_toEndOf="@+id/team2" />
+
+    <Button
+        android:id="@+id/behind2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#2196F3"
+        android:text="Behind"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/team2"
+        app:layout_constraintStart_toEndOf="@+id/goal2" />
+
+    <TextView
+        android:id="@+id/cur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Current: 0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/team2"
+        app:layout_constraintStart_toEndOf="@+id/behind2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
